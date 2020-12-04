@@ -10,5 +10,5 @@
 
 ## Day 2
 
-    $ perl aoc2_1.pl < input.txt
-    $ perl aoc2_2.pl < input.txt
+    $ perl day2s1.pl < input.txt
+    $ perl day2s2.pl < input.txt

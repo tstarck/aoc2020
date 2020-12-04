@@ -1,4 +1,4 @@
-RUN      = run_aoc1_1 run_aoc1_2
+RUN      = run_day1s1 run_day1s2
 CFLAGS   = -ansi -pedantic -O2 -std=c17 -Wall
 VALGRIND = /usr/bin/valgrind
 
@@ -13,11 +13,11 @@ clean:
 %.o: %.c
 	$(CC) $(CFLAGS) -c $<
 
-run_aoc1_1: aoc1_1.o
+run_day1s1: day1s1.o
 	$(CC) $(CFLAGS) $^ -o $@
 	$(VALGRIND) ./$@
 
-run_aoc1_2: aoc1_2.o
+run_day1s2: day1s2.o
 	$(CC) $(CFLAGS) $^ -o $@
 	$(VALGRIND) ./$@
 
